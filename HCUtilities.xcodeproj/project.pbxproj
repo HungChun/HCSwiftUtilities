@@ -109,7 +109,7 @@
 		F19763C21FE12330001507C2 /* HCUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				F19763F51FE129F2001507C2 /* Tools */,
+				F197640E1FE12BAA001507C2 /* Classes */,
 				F19763C31FE12330001507C2 /* AppDelegate.swift */,
 				F19763C51FE12330001507C2 /* ViewController.swift */,
 				F19763C71FE12330001507C2 /* Main.storyboard */,
@@ -149,6 +149,14 @@
 				F19764071FE12A22001507C2 /* HCColorExtension.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		F197640E1FE12BAA001507C2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F19763F51FE129F2001507C2 /* Tools */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
