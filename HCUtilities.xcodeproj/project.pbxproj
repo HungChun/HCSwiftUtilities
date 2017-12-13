@@ -14,7 +14,12 @@
 		F19763CE1FE12330001507C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19763CC1FE12330001507C2 /* LaunchScreen.storyboard */; };
 		F19763D91FE12330001507C2 /* HCUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19763D81FE12330001507C2 /* HCUtilitiesTests.swift */; };
 		F19763E41FE12330001507C2 /* HCUtilitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19763E31FE12330001507C2 /* HCUtilitiesUITests.swift */; };
-		F19763F21FE12349001507C2 /* Tool in Resources */ = {isa = PBXBuildFile; fileRef = F19763F11FE12348001507C2 /* Tool */; };
+		F19764081FE12A22001507C2 /* HCStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764021FE12A21001507C2 /* HCStringExtension.swift */; };
+		F19764091FE12A22001507C2 /* HCDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764031FE12A21001507C2 /* HCDateExtension.swift */; };
+		F197640A1FE12A22001507C2 /* HCHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764041FE12A22001507C2 /* HCHttp.swift */; };
+		F197640B1FE12A22001507C2 /* HCCodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764051FE12A22001507C2 /* HCCodableExtensions.swift */; };
+		F197640C1FE12A22001507C2 /* HCViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764061FE12A22001507C2 /* HCViewControllerExtension.swift */; };
+		F197640D1FE12A22001507C2 /* HCColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19764071FE12A22001507C2 /* HCColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +53,12 @@
 		F19763DF1FE12330001507C2 /* HCUtilitiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCUtilitiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19763E31FE12330001507C2 /* HCUtilitiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCUtilitiesUITests.swift; sourceTree = "<group>"; };
 		F19763E51FE12330001507C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F19763F11FE12348001507C2 /* Tool */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tool; sourceTree = "<group>"; };
+		F19764021FE12A21001507C2 /* HCStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCStringExtension.swift; sourceTree = "<group>"; };
+		F19764031FE12A21001507C2 /* HCDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCDateExtension.swift; sourceTree = "<group>"; };
+		F19764041FE12A22001507C2 /* HCHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCHttp.swift; sourceTree = "<group>"; };
+		F19764051FE12A22001507C2 /* HCCodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCCodableExtensions.swift; sourceTree = "<group>"; };
+		F19764061FE12A22001507C2 /* HCViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCViewControllerExtension.swift; sourceTree = "<group>"; };
+		F19764071FE12A22001507C2 /* HCColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,7 @@
 		F19763C21FE12330001507C2 /* HCUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				F19763F11FE12348001507C2 /* Tool */,
+				F19763F51FE129F2001507C2 /* Tools */,
 				F19763C31FE12330001507C2 /* AppDelegate.swift */,
 				F19763C51FE12330001507C2 /* ViewController.swift */,
 				F19763C71FE12330001507C2 /* Main.storyboard */,
@@ -126,6 +136,19 @@
 				F19763E51FE12330001507C2 /* Info.plist */,
 			);
 			path = HCUtilitiesUITests;
+			sourceTree = "<group>";
+		};
+		F19763F51FE129F2001507C2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F19764041FE12A22001507C2 /* HCHttp.swift */,
+				F19764021FE12A21001507C2 /* HCStringExtension.swift */,
+				F19764031FE12A21001507C2 /* HCDateExtension.swift */,
+				F19764051FE12A22001507C2 /* HCCodableExtensions.swift */,
+				F19764061FE12A22001507C2 /* HCViewControllerExtension.swift */,
+				F19764071FE12A22001507C2 /* HCColorExtension.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +260,6 @@
 			files = (
 				F19763CE1FE12330001507C2 /* LaunchScreen.storyboard in Resources */,
 				F19763CB1FE12330001507C2 /* Assets.xcassets in Resources */,
-				F19763F21FE12349001507C2 /* Tool in Resources */,
 				F19763C91FE12330001507C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F197640D1FE12A22001507C2 /* HCColorExtension.swift in Sources */,
+				F197640C1FE12A22001507C2 /* HCViewControllerExtension.swift in Sources */,
 				F19763C61FE12330001507C2 /* ViewController.swift in Sources */,
+				F197640A1FE12A22001507C2 /* HCHttp.swift in Sources */,
 				F19763C41FE12330001507C2 /* AppDelegate.swift in Sources */,
+				F197640B1FE12A22001507C2 /* HCCodableExtensions.swift in Sources */,
+				F19764091FE12A22001507C2 /* HCDateExtension.swift in Sources */,
+				F19764081FE12A22001507C2 /* HCStringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
