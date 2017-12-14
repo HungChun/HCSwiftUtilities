@@ -7,56 +7,56 @@
 //
 
 import Foundation
-enum TimeDateUnit
+public enum TimeDateUnit
 {
     case Day,Hour,Minute,Second
 }
 extension Date {
-    static func format(formatString:String,dateString:String) -> Date {
+    public static func format(formatString:String,dateString:String) -> Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = formatString
         return dateFormatter.date(from: dateString)!
     }
     
-    var year: Int {
+    public var year: Int {
         let gregorian = Calendar(identifier: Calendar.Identifier.gregorian)
         return gregorian.component(Calendar.Component.year, from: self)
     }
     
-    var month: Int {
+    public var month: Int {
         let gregorian = Calendar(identifier: Calendar.Identifier.gregorian)
         return gregorian.component(Calendar.Component.month, from: self)
     }
     
-    var day: Int {
+    public var day: Int {
         let gregorian = Calendar(identifier: Calendar.Identifier.gregorian)
         return gregorian.component(Calendar.Component.day, from: self)
     }
     
-    var hour: Int {
+    public var hour: Int {
         let gregorian = Calendar(identifier: Calendar.Identifier.gregorian)
         return gregorian.component(Calendar.Component.hour, from: self)
     }
     
-    var minute: Int {
+    public var minute: Int {
         let gregorian = Calendar(identifier: Calendar.Identifier.gregorian)
         return gregorian.component(Calendar.Component.minute, from: self)
     }
     
-    var second: Int {
+    public var second: Int {
         let gregorian = Calendar(identifier: Calendar.Identifier.gregorian)
         return gregorian.component(Calendar.Component.second, from: self)
     }
     
-    func add(unit:TimeDateUnit,mount:Int) -> Date {
+    public func add(unit:TimeDateUnit,mount:Int) -> Date {
         return self.addingTimeInterval(Double(increaseTime(unit: unit) * mount))
     }
     
-    func subtract(unit:TimeDateUnit,mount:Int) -> Date {
+    public func subtract(unit:TimeDateUnit,mount:Int) -> Date {
         return self.addingTimeInterval(-Double(increaseTime(unit: unit) * mount))
     }
     
-    func increaseTime(unit:TimeDateUnit) -> Int {
+    public func increaseTime(unit:TimeDateUnit) -> Int {
         var increase = 0
         switch unit {
         case .Day:
@@ -71,7 +71,7 @@ extension Date {
         return increase;
     }
     
-    func toString(format:String) -> String{
+    public func toString(format:String) -> String{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)

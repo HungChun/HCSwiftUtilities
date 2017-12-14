@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum SaveFormatter
+public enum SaveFormatter
 {
     case JSON, Plist
 }
@@ -32,7 +32,7 @@ private func savePath(_ fileName: String, formatter: SaveFormatter) -> URL
 }
 extension Decodable
 {
-    static func from(_ fileName: String, formatter: SaveFormatter = .JSON) -> Self?
+    public static func from(_ fileName: String, formatter: SaveFormatter = .JSON) -> Self?
     {
         do
         {
@@ -54,7 +54,7 @@ extension Decodable
 }
 extension Encodable
 {
-    func save(to fileName: String, formatter: SaveFormatter = .JSON) -> Bool
+    public func save(to fileName: String, formatter: SaveFormatter = .JSON) -> Bool
     {
         do
         {

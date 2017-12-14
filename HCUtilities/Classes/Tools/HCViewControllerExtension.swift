@@ -8,10 +8,10 @@
 
 import Foundation
 import UIKit
-typealias HCAlertVoidCallback = () -> Void
+public typealias HCAlertVoidCallback = () -> Void
 
 extension UIViewController {
-    func showTwoAlert(title:String?,
+    public func showTwoAlert(title:String?,
                           message:String?,
                           done:String,
                           cancel:String?,
@@ -30,7 +30,7 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func showOneButtonAlert(title:String?,
+    public func showOneButtonAlert(title:String?,
                           message:String?,
                           done:String,
                           doneCallback:@escaping HCAlertVoidCallback) {

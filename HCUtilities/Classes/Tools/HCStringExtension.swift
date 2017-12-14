@@ -8,7 +8,7 @@
 
 import Foundation
 extension String {
-    func subStringFromThenTo(from:String,to:String) -> String? {
+    public func subStringFromThenTo(from:String,to:String) -> String? {
         guard let fromRange = self.range(of:from) else {
             return nil
         }
@@ -19,7 +19,7 @@ extension String {
         return "\(str1[..<toRange.lowerBound])"
     }
     
-    func removeBeforeFirstString(target:String) -> String? {
+    public func removeBeforeFirstString(target:String) -> String? {
         
         guard let targetRange = self.range(of:target) else {
             return nil
