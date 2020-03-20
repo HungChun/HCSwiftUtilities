@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HCUtilities"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "常用的extension"
-  
+
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
