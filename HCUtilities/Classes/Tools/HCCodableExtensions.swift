@@ -12,8 +12,8 @@ public enum SaveFormatter
 {
     case JSON, Plist
 }
-private let jsonFolder = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("HCJSON", isDirectory: true)
-private let plistFolder = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!.appendingPathComponent("HCPLIST", isDirectory: true)
+private let jsonFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("HCJSON", isDirectory: true)
+private let plistFolder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("HCPLIST", isDirectory: true)
 private func savePath(_ fileName: String, formatter: SaveFormatter) -> URL
 {
     var folder: URL
